@@ -11,3 +11,7 @@ The publishing itself can be achieved like that:
 ```
 4metadata.py | publish.sh
 ```
+or alternatively like that when reading from file:
+```
+while read -r line; do echo -e "$line" | publish.sh; done < file-to-read-from.txt
+```
